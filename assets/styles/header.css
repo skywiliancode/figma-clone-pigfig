@@ -1,0 +1,104 @@
+@import url(../styles/reset.css);
+/* Global Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1F1F1F;
+  background-color: #FFFFFF;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  max-height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.logo-img {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.features-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feature-item {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  position: relative;
+  padding-left: 30px;
+}
+
+.feature-item::before {
+  content: "";
+  left: 0;
+  top: 10px;
+  display: inline-block;
+  position: absolute;
+  background: url(../images/check.svg);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.btn-cta {
+  font-size: 2rem;
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 20px 40px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.btn-cta::after {
+  content: "";
+  display: inline-block;
+  background: url(../images/btn-logo.png);
+  background-repeat: no-repeat;
+  width: 33.75px;
+  height: 53.45px;
+}
+
+@media screen and (max-width: 480px){
+
+  .header-container{
+    align-items: center;
+  }
+
+  .title{
+    font-size: 3rem;
+  }
+
+  .feature-item{
+    font-size: 1rem;
+  }
+
+  .btn-cta{
+    font-size: 1.5rem;
+  }
+}
